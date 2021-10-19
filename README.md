@@ -9,8 +9,8 @@ Created by George Mead
 ## Links to application deployment
 
 - Heroku:
-  - [dev](https://dashboard.heroku.com/apps/meadg-server-deploy-dev/deploy/github)
-  - [main](https://dashboard.heroku.com/apps/meadg-server-deploy-prod/deploy/github)
+  - [dev](https://meadg-server-deploy-dev.herokuapp.com)
+  - [main](https://meadg-server-deploy-prod.herokuapp.com)
 
 - [Github Actions](https://github.com/gmeadiv/server-deployment-practice/actions)
 
