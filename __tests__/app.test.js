@@ -9,7 +9,7 @@ const request = supertest(app);
 describe('Testing my express server', () => {
   it('should respond with a string on POST /talk', async () => {
     let param = 'somewords';
-    
+
     let response = await request.post('/talk').send({words: param});
 
     expect(response.status).toBe(200);
