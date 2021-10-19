@@ -3,8 +3,14 @@
 const express = require('express');
 const app = express();
 
-app.post('/talk', function (request, response, next) {
-  response.send('ok')
-})
+const repeat = require('./routes/repeat.js');
+const talk = require('./routes/talk.js');
+const log = require('./middleware/log.js');
+
+app.use(express.json());
+app.use(log);
+
+app.post('/talk', talk);
+app.get('/repeat', repeat)
 
 module.exports = app;
